@@ -1,0 +1,80 @@
+@import url('https://fonts.googleapis.com/css2?family=Outfit:wght@100..900&display=swap');
+.imc-container{
+  min-height: 100vh;
+  background: linear-gradient(135deg, #ea66cd 0%, #714ba2 100%);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 20px;
+  font-family: "Outfit", sans-serif;
+}
+.imc-card{
+  width: 100%;
+  max-width: 480px;
+  background: rgba(255, 255, 255, 0.4);
+  border: 1px solid rgba(255, 255, 255, 0.6);
+  border-radius: 13px;
+  backdrop-filter: blur(20px);
+  padding: 50px 40px; 
+  box-shadow: 4px 12px 20px 9px rgba(0,0,0,0.7);
+  animation: slideIn 0.6s ease-out;
+}
+ .imc-card h1{
+  font-size: 2.5rem;
+  font-weight: 800;
+  margin: 0 0 8px 0;
+  background: linear-gradient( 135deg, #6605e6 0%, #714ba2 100%);
+  background-clip: text;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+ } 
+ .imc-card p{
+  color: #64748b;
+  font-size: 0.8rem;
+  text-align: center;
+  font-weight: 400;
+  margin: 0;
+ }
+ .imc-form{
+  margin-bottom: 32px;
+ }
+ input{
+  width: 100%;
+  padding: 18px 20px;
+  font-size: 18px;
+  bottom: 2px solid #e2e8f0;
+  border-radius: 16px;
+  outline: none;
+  font-family: inherit;
+  font-weight: 500;
+  color: #1e293b;
+  background: rgba(255, 255, 255, 0.4);
+  box-sizing: border-box;
+  transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+  margin-top: 12px;
+ }
+ input:focus{
+  transform: scale(1.02);
+  box-shadow: 0 10px 20px rgba(255, 255, 255, 0.3);
+  background-color: #9066ea;
+  background: #fff;
+}
+input::placeholder{
+  color: #94a3b8;
+
+}
+ .imc-form button{
+  color: black;
+  background: #fff;
+  border-radius: 20px;
+  height: 25px;
+  width: 90px;
+  margin-top: 20px;
+  font-size: 18px;
+ }
+ .imc-form button:hover{
+  color: #000;
+  background: #adadad;
+  transition: 0.3s;
+  transform: scale(1.02);
+ }
